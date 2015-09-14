@@ -1,5 +1,5 @@
 # swift-projects
-A comprehensive compilation of swift applications while deep diving into the details of the Swift laguage.
+A comprehensive compilation of swift applications while deep diving into the details of the Swift language.
 
 1. Calculator - Intro to swift.
 
