@@ -29,6 +29,11 @@ class ViewController: UIViewController {
         }
     }
 
+    
+    @IBAction func enter(sender: AnyObject) {
+        println(sender.currentTitle)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
