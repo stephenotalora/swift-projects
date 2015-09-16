@@ -8,6 +8,24 @@
 
 import Foundation
 
-class Calculator:NSObject {
+class Calculator {
+    private var result: Double!;
+    private var operandStack = Array<Double>()
+    var resultValue: Double {
+        get {
+            return result;
+        }
+    }
     
+    func performOperation(operation: (Double, Double) -> Double) {
+        if operandStack.count >= 2 {
+            result = operation(operandStack.removeLast(), operandStack.removeLast());
+        }
+    }
+    
+    func performOperation(operation: Double -> Double) {
+        if operandStack.count >= 1 {
+            result = operation(operandStack.removeLast())
+        }
+    }
 }
