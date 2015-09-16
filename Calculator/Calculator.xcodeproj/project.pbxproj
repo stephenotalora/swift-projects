@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB804CDA1BA94CC400AF54BA /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB804CD91BA94CC400AF54BA /* Calculator.swift */; };
 		FBD22F541BA65E5600B8D711 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD22F531BA65E5600B8D711 /* AppDelegate.swift */; };
 		FBD22F561BA65E5600B8D711 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD22F551BA65E5600B8D711 /* ViewController.swift */; };
 		FBD22F591BA65E5600B8D711 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD22F571BA65E5600B8D711 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB804CD91BA94CC400AF54BA /* Calculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		FBD22F4E1BA65E5600B8D711 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD22F521BA65E5600B8D711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBD22F531BA65E5600B8D711 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB804CD61BA94C8700AF54BA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FB804CD91BA94CC400AF54BA /* Calculator.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		FB804CD71BA94C8E00AF54BA /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FBD22F571BA65E5600B8D711 /* Main.storyboard */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		FB804CD81BA94C9600AF54BA /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				FBD22F551BA65E5600B8D711 /* ViewController.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
 		FBD22F451BA65E5600B8D711 = {
 			isa = PBXGroup;
 			children = (
@@ -77,8 +103,9 @@
 		FBD22F501BA65E5600B8D711 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				FBD22F551BA65E5600B8D711 /* ViewController.swift */,
-				FBD22F571BA65E5600B8D711 /* Main.storyboard */,
+				FB804CD81BA94C9600AF54BA /* controller */,
+				FB804CD71BA94C8E00AF54BA /* view */,
+				FB804CD61BA94C8700AF54BA /* model */,
 				FBD22F511BA65E5600B8D711 /* Supporting Files */,
 			);
 			path = Calculator;
@@ -214,6 +241,7 @@
 			files = (
 				FBD22F561BA65E5600B8D711 /* ViewController.swift in Sources */,
 				FBD22F541BA65E5600B8D711 /* AppDelegate.swift in Sources */,
+				FB804CDA1BA94CC400AF54BA /* Calculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +439,7 @@
 				FBD22F6F1BA65E5700B8D711 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FBD22F701BA65E5700B8D711 /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +448,7 @@
 				FBD22F721BA65E5700B8D711 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
